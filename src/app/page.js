@@ -8,7 +8,7 @@ export default function Home() {
       <div className="h-1/6">
         <Header />
       </div>
-      <hr className="hr-1" />
+
       <div className="h-5/6">
         <div className="min-h-full flex">
           <Description />
