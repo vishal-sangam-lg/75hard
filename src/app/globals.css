@@ -53,3 +53,17 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Gruppo";
+  src: url("../fonts/Gruppo-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
