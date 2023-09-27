@@ -46,3 +46,10 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}

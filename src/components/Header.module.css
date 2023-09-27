@@ -13,18 +13,18 @@
   color: white;
 }
 .RightToLeft {
-  -moz-animation: RightToLeft 25s linear infinite;
-  -webkit-animation: RightToLeft 25s linear infinite;
-  animation: RightToLeft 25s linear infinite;
+  -moz-animation: RightToLeft 30s linear infinite;
+  -webkit-animation: RightToLeft 30s linear infinite;
+  animation: RightToLeft 30s linear infinite;
 }
 .Text {
   padding: 6px 0;
 }
 @keyframes RightToLeft {
   0% {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+    -moz-transform: translateX(5%);
+    -webkit-transform: translateX(5%);
+    transform: translateX(5%);
   }
   100% {
     -moz-transform: translateX(-100%);

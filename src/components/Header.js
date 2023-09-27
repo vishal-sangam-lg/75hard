@@ -1,4 +1,4 @@
-import { Dela_Gothic_One } from "next/font/google";
+import { Dela_Gothic_One, Orbitron } from "next/font/google";
 import computer from "@/assets/computer.png";
 import Image from "next/image";
 import diet from "@/assets/diet.png";
@@ -6,12 +6,16 @@ import dumbbell from "@/assets/dumbbell.png";
 import openbook from "@/assets/openbook.png";
 import waterbottle from "@/assets/waterbottle.png";
 import styles from "./Header.module.css";
+import Marquee from "react-fast-marquee";
 
 const DelaFont = Dela_Gothic_One({
   subsets: ["latin"],
   weight: "400",
 });
-
+const Orbi = Orbitron({
+  subsets: ["latin"],
+  weight: "400",
+});
 export default function Header() {
   return (
     <div className="min-h-full">
@@ -61,19 +65,23 @@ export default function Header() {
           />{" "}
         </div>
       </div>
-      <div className={styles.container}>
-        <div className={styles.scroll}>
-          <div className={styles.RightToLeft}>
-            <p className={styles.Text}>
-              "YOU DON'T KNOW ME SON" __________"I DON'T STOP WHEN I'M TIRED,I
-              STOP WHEN I'M DONE" __________"STOP BEING A BITCH"__________
-              "MENTAL TOUGHNESS IS A LIFESTYLE"__________"YOU DON'T KNOW ME SON"
-              __________"I DON'T STOP WHEN I'M TIRED,I STOP WHEN I'M DONE"
-              __________"STOP BEING A BITCH"__________ "MENTAL TOUGHNESS IS A
-              LIFESTYLE"{" "}
-            </p>
+      <div className="pt-2">
+        <Marquee speed="100" delay="0.5" pauseOnHover="true">
+          <div
+            style={{
+              fontFamily: "Orbitron",
+            }}
+          >
+            I DON’T STOP WHEN I’M TIRED, I STOP WHEN I’M DONE
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            YOU DON'T KNOW ME SON
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            STOP BEING A
+            BITCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            MENTAL TOUGHNESS IS A
+            LIFESTYLE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
-        </div>
+        </Marquee>
       </div>
     </div>
   );
